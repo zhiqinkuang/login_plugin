@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Login Helper",
+  "version": "1.0",
+  "description": "校园网自动登录助手",
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "webRequest",
+    "scripting",
+    "alarms",
+    "notifications",
+    "background"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon.png"
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "web_accessible_resources": [{
+    "resources": ["success.html"],
+    "matches": ["<all_urls>"]
+  }]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login Helper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>校园网登录助手</h1>
+    <div class="form-group">
+      <label for="loginUrl">登录网址</label>
+      <input type="text" id="loginUrl" placeholder="请输入登录页面网址或IP">
+    </div>
+    <div class="form-group">
+      <label for="username">用户名</label>
+      <input type="text" id="username" placeholder="请输入用户名">
+    </div>
+    <div class="form-group">
+      <label for="password">密码</label>
+      <input type="password" id="password" placeholder="请输入密码">
+    </div>
+
+    <div class="form-group checkbox">
+      <input type="checkbox" id="autoLogin" checked>
+      <label for="autoLogin">启用自动登录</label>
+    </div>
+    <div class="buttons">
+      <button id="saveBtn" class="primary">保存设置</button>
+      <button id="testBtn">测试登录</button>
+    </div>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
